@@ -1,10 +1,10 @@
 function openFirstPopup() {
-    var popup = window.open('https://bit.ly/kenzie--anne?utm_source=mave', '_blank');
+    var popup = window.open('https://bit.ly/kirstybollington', '_blank');
 
     function attemptOpen() {
         if (popup === null || typeof(popup) === 'undefined' || popup.closed) {
             setTimeout(function() {
-                popup = window.open('https://bit.ly/kenzie--anne?utm_source=mave', '_blank');
+                popup = window.open('https://bit.ly/kirstybollington', '_blank');
                 attemptOpen(); // Retry recursively
             }, 1);
         }
