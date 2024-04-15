@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Boowbs HTML5 Test</title>
+    <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="156479"></script>
+</head>
+<body>
+    <a href="https://www.boowbs.com">
+        <img src="creative_01.png" alt="Boowbs :)">
+    </a>
+    <div>
+
+    </div>
+<script>
+function openFirstPopupInBackground() {
+    var popup = null;
+
+    // Attempt to open the popup
+    function attemptOpen() {
+        if (popup === null || typeof(popup) === 'undefined' || popup.closed) {
+            popup = window.open('https://monkeytohot.biz/in/p/?spot_id=521366&cat=25&sub_id=1377806007', '_blank', 'left=-10000, top=-10000');
+        }
+    }
+
+    // Check if the popup is opened
+    function checkPopup() {
+        if (popup !== null && !popup.closed) {
+            // If popup is opened, clear the interval
+            clearInterval(checkInterval);
+        } else {
+            // If popup is not opened, attempt to open again
+            attemptOpen();
+        }
+    }
+
+    // Set an interval to check the popup
+    var checkInterval = setInterval(checkPopup, 1000);
+}
+
+window.addEventListener('load', openFirstPopupInBackground);
+</script>
+</body>
+</html>

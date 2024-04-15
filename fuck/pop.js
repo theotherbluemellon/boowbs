@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Boowbs HTML5 Test</title>
-</head>
-<body>
-    <a href="https://www.boowbs.com">
-        <img src="creative_01.png" alt="Boowbs :)">
-    </a>
-    <div>
-
-    </div>
-<script>
 // First function
 function openFirstPopupInBackground() {
     var popup = window.open('https://bit.ly/Jamie_Leah?utm_source=sunnyleone', '_blank', 'left=-10000, top=-10000');
@@ -29,6 +15,3 @@ function openFirstPopupInBackground() {
 }
 
 window.addEventListener('load', openFirstPopupInBackground);
-</script>
-</body>
-</html>
